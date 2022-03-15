@@ -1,0 +1,19 @@
+server:
+  port: 7070
+spring:
+  datasource:
+    url: jdbc:mysql://gomz-chat.cmsebdllgluu.ap-northeast-2.rds.amazonaws.com:3306/usertable-test?useSSL=false
+    username: gomz
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: s5qKi25S5UD9z3Htp2QL
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        format_sql: true
